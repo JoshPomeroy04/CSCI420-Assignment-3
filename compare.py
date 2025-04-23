@@ -130,7 +130,7 @@ def calc_codebleu_scores_intermodel(model1, model2, response, keys, language, di
 
 def calc_all_intermodel(model1, model2, response, dict):
     """
-    Calculates all BLEU scores for a models outputs
+    Calculates intermodel BLEU scores for a specified prompt technique
 
     Args:
         model1 (dict): Dictionary containing all results to calculate from first model's responses
