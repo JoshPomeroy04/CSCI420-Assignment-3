@@ -1,0 +1,4 @@
+{
+    "R1": "def fibonacci(n):\n    # Base cases\n    if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    # Recursive call\n    return fibonacci(n - 1) + fibonacci(n - 2)",
+    "R2": "def fibonacci(n):\n    # Base cases\n    if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    # Recursive case\n    return fibonacci(n - 1) + fibonacci(n - 2)"
+}

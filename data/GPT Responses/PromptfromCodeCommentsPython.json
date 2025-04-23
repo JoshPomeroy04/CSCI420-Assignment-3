@@ -1,0 +1,4 @@
+{
+    "R1": "Write a Python function called is_prime(n) that returns True if n is a prime number and False otherwise. The function should check if n is less than or equal to 1 (not prime), and for other values, it should check divisibility from 2 up to the square root of n. Include a comment explaining the purpose of the function.",
+    "R2": "Write a Python function called is_prime(n) that returns True if the input number n is a prime number and False otherwise. Include a comment describing the function's purpose, and use an efficient method that checks divisibility only up to the square root of n."
+}

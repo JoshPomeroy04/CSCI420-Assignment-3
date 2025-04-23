@@ -1,0 +1,4 @@
+{
+    "R1": "import re\n\n\ndef is_valid_email(email):\n    # Basic regex for email validation\n    pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$'\n    return re.match(pattern, email) is not None",
+    "R2": "import re\n\n\ndef is_valid_email(email):\n    pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$'\n    match = re.match(pattern, email)\n    return match is not None"
+}

@@ -1,0 +1,4 @@
+{
+    "R1": "The function reverse_words(sentence) takes a string sentence as input, splits it into words, reverses the order of the words, and then joins them back into a single string separated by spaces. It returns this reversed word order as the output.",
+    "R2": "Reverses the order of words in a sentence."
+}
