@@ -3,6 +3,7 @@ import nltk
 import json
 from sacrebleu.metrics import BLEU
 from codebleu import calc_codebleu
+import csv
 
 nltk.download('punkt_tab')
 
@@ -63,6 +64,16 @@ def calc_codebleu_scores(model, keys, language, dict):
         dict[key] = round(codebleuscore["codebleu"] * 100, 2)
 
 def calc_all(model, dict):
+    """
+    Calculates all BLEU scores for a models outputs
+
+    Args:
+        model (dict): Dictionary containing all results to calculate
+        dict (dict): Dictionary to store results in
+
+    Returns:
+        None
+    """
     for key in BLEU_KEYS:
         reference = model[key]["R1"]
         hypothesis = model[key]["R2"]
@@ -75,11 +86,29 @@ def calc_all(model, dict):
     calc_codebleu_scores(model, CPP_KEYS, "cpp", dict)
     calc_codebleu_scores(model, JS_KEYS, "javascript", dict)
 
+def save_to_csv(results, file):
+    """
+    Saves results to a csv file
+
+    Args:
+        results (dict): Dictionary containing all results
+        file (str): File name to save results in
+
+    Returns:
+        None
+    """
+    with open(f"{FOLDER_PATH}/results/{file}", mode='w', newline='', encoding='utf-8') as csvfile:
+        csv_writer = csv.writer(csvfile)
+        csv_writer.writerow(["Task", "Score"])
+        for key in results.keys():
+             csv_writer.writerow([key, results[key]])
+
 gemini_responses = read_json_files(f"{FOLDER_PATH}/data/Gemini Responses/")
 gpt_responses = read_json_files(f"{FOLDER_PATH}/data/GPT Responses/")
 
 calc_all(gemini_responses, gemini_scores)
 calc_all(gpt_responses, gpt_scores)
 
-print(gemini_scores)
-print(gpt_scores)
+save_to_csv(gemini_scores, "gemini.csv")
+save_to_csv(gpt_scores, "gpt.csv")
+
