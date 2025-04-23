@@ -1,0 +1,4 @@
+{
+    "R1": "class Person:\n    def __init__(self, name, age, email=None):\n        \"\"\"\n        Initializes a Person object.\n\n\n        Args:\n            name (str): The name of the person.\n            age (int): The age of the person.\n            email (str, optional): The email address of the person. Defaults to None.\n        \"\"\"\n        self.name = name\n        self.age = age\n        self.email = email",
+    "R2": "class Person:\n    def __init__(self, name, age, email=None):\n        self.name = name\n        self.age = age\n        self.email = email"
+}

@@ -1,0 +1,4 @@
+{
+  "R1": "def calculate_average ( scores ) :\n  total = 0\n  if not scores:\n    return 0\n  for score in scores:\n    total += score\n  average = total / len(scores)\n  return average",
+  "R2": "def calculate_average ( scores ) :\n  total = 0\n  if not scores:\n    return 0\n  for score in scores:\n    total += score\n  average = total / len(scores)\n  return average"
+}

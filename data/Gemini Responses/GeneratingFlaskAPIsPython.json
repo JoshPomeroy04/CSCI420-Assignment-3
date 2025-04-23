@@ -1,0 +1,4 @@
+{
+    "R1": "from flask import Flask, jsonify\n\n\napp = Flask(__name__)\n\n\n@app.route('/greet/<username>')\ndef greet(username):\n    greeting = {\"message\": f\"Hello, {username}! Welcome!\"}\n    return jsonify(greeting)\n\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+    "R2": "from flask import Flask, jsonify\n\n\napp = Flask(__name__)\n\n\n@app.route('/greet/<username>')\ndef greet(username):\n    greeting = {\"message\": f\"Hello, {username}! Welcome to Williamsburg!\"}\n    return jsonify(greeting)\n\n\nif __name__ == '__main__':\n    app.run(debug=True)"
+}

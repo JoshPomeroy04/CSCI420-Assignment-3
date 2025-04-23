@@ -1,0 +1,4 @@
+{
+    "R1": "def factorial(n):\n    if n < 0:\n        return \"Factorial is not defined for negative numbers\"\n    elif n == 0:\n        return 1\n    else:\n        result = 1\n        for i in range(1, n + 1):  # Changed the range to include n\n            result *= i\n        return result",
+    "R2": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        result = 1\n        for i in range(1, n + 1):\n            result *= i\n        return result"
+}

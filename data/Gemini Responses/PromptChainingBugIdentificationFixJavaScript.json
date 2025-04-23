@@ -1,0 +1,4 @@
+{
+    "R1": "function isEven(n) {\n  return n % 2 === 0; // Returns true if the remainder is 0, false otherwise\n}",
+    "R2": "function isEven ( n ) {\n  return n % 2 === 0; // Returns true if the remainder is 0, false otherwise\n}"
+}

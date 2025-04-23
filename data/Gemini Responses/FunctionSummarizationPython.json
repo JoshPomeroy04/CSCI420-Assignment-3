@@ -1,0 +1,4 @@
+{
+    "R1": "That Python function reverse_words takes a string called sentence as input. It first splits the sentence into a list of individual words using the split() method (which by default splits on whitespace). Then, it uses slicing [::-1] to create a reversed copy of this list of words. Finally, it joins the reversed list of words back into a single string with spaces in between each word using the ' '.join() method.\n\n\nIn essence, this function reverses the order of words within a sentence.",
+    "R2": "Reverses the order of words in a sentence."
+}

@@ -1,0 +1,4 @@
+{
+    "R1": "bool isEven (int x ) {\n  return x % 2 == 0;\n}",
+    "R2": "bool isEven (int x ) {\n return x % 2 == 0;\n}"
+}

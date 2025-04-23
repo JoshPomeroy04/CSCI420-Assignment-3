@@ -1,0 +1,4 @@
+{
+    "R1": "def fibonacci(n):\n    \"\"\"\n    Calculates the nth Fibonacci number recursively.\n\n\n    Args:\n        n: The index of the desired Fibonacci number (non-negative integer).\n\n\n    Returns:\n        The nth Fibonacci number.\n    \"\"\"\n    # Base cases\n    if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    # Recursive call\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\n\n# Example Usage:\nprint(f\"fibonacci(0) = {fibonacci(0)}\")\nprint(f\"fibonacci(1) = {fibonacci(1)}\")\nprint(f\"fibonacci(2) = {fibonacci(2)}\")\nprint(f\"fibonacci(3) = {fibonacci(3)}\")\nprint(f\"fibonacci(4) = {fibonacci(4)}\")\nprint(f\"fibonacci(5) = {fibonacci(5)}\")\nprint(f\"fibonacci(10) = {fibonacci(10)}\")",
+    "R2": "def fibonacci(n):\n    # Base cases\n    if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    # Recursive call\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)"
+}
