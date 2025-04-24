@@ -7,7 +7,7 @@ PromptfromCodeCommentsPython.json,42.44
 SummaryDecompositionC++.json,30.4
 SQLSchemaDesignSQL.json,56.24
 DataClasstoAPIConversionKotlin.json,76.09
-BugFixingPython-Off-by-One.json,73.06
+BugFixingPython-Off-by-One.json,80.75
 ConstructorCompletionPython.json,100.0
 CSVParserVariantsPython.json,18.61
 FixingFactorialBugPython.json,100.0

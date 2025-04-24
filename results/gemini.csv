@@ -10,7 +10,7 @@ DataClasstoAPIConversionKotlin.json,37.03
 BugFixingPython-Off-by-One.json,100.0
 ConstructorCompletionPython.json,56.43
 CSVParserVariantsPython.json,9.69
-FixingFactorialBugPython.json,53.85
+FixingFactorialBugPython.json,52.06
 GeneratingEmailValidatorsPython+Regex.json,56.29
 GeneratingFlaskAPIsPython.json,92.52
 PurposeInferenceCompletionPython.json,100.0
