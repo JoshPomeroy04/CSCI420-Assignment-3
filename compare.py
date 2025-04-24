@@ -1,11 +1,8 @@
 import os
-import nltk
 import json
 from sacrebleu.metrics import BLEU
 from codebleu import calc_codebleu
 import csv
-
-nltk.download('punkt_tab')
 
 FOLDER_PATH = "CSCI_420/CSCI420-Assignment-3"
 BLEU_KEYS = ["BugClassificationC++.json", "CodeSummarizationJava.json", "FunctionSummarizationPython.json", 
@@ -162,6 +159,7 @@ calc_all(gpt_responses, gpt_scores)
 calc_all_intermodel(gemini_responses, gpt_responses, "R1", gpt_gemini_R1_scores)
 calc_all_intermodel(gemini_responses, gpt_responses, "R2", gpt_gemini_R2_scores)
 
+quit()
 save_to_csv(gemini_scores, "gemini.csv")
 save_to_csv(gpt_scores, "gpt.csv")
 save_to_csv(gpt_gemini_R1_scores, "gpt-gemini-R1.csv")
