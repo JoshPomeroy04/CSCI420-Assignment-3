@@ -15,7 +15,7 @@ Gemini 2.0 Flash: https://gemini.google.com/app
 
 (1) Clone the repository to your workspace:  
 ```shell
-~ $ git clone https://github.com/JoshPomeroy04/CSCI420-Assignment-2.git
+~ $ git clone https://github.com/JoshPomeroy04/CSCI420-Assignment-3.git
 ```
 (2) Navigate into the repository
 
